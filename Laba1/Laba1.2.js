@@ -5,7 +5,7 @@
 //Пройдіться по масиву циклом for..of і для кожного елемента масиву, збільшуйте відповідне значення в об'єкті-колекції.
 
 const arr = [true, 'hello', 5, 12, -200, false, false, 'word', null, undefined, { x: 1 }, [1,2,3], () => 42, 3.14];
-const typesCount = {
+const types = {
   number: 0,
   string: 0,
   boolean: 0,
@@ -14,5 +14,5 @@ const typesCount = {
   function: 0,};
 for (const it of arr) {
   const t = typeof it;
-  typesCount[t] += 1;}
-console.dir(typesCount);
+  types[t] += 1;}
+console.dir(types);
