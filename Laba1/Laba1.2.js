@@ -13,6 +13,6 @@ const types = {
   undefined: 0,
   function: 0,};
 for (const it of arr) {
-  const t = typeof it;
-  types[t] += 1;}
+const t = typeof it;
+types[t] += 1;}
 console.dir(types);
